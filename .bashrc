@@ -2,6 +2,14 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+
+# Ajout du prompt script :
+export GIT_PS1_SHOWUPSTREAM=true
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_pS1_SHOWSTASHSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=verbose
+source /usr/share/git/completion/git-prompt.sh 
+
 color_prompt=yes;
 
 # If not running interactively, don't do anything
@@ -52,7 +60,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1 " (%s)") \[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
