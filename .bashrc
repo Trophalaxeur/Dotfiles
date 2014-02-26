@@ -124,7 +124,7 @@ bind '"\e[4~": end-of-line'
 bind '"\e?":backward-kill-word'
 
 #Definition de l'editeur par defaut pour crontab
-export EDITOR=/usr/bin/emacs
+export EDITOR=/usr/bin/vim
 export BROWSER=/usr/bin/firefox
 
 # enable programmable completion features (you don't need to enable
