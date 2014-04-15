@@ -106,4 +106,12 @@ endif
 "Affichage des numeros de lignes
 set number
 
+" Size of a hard tabstop
+set tabstop=4
+
+" Size of an "indent"
+set shiftwidth=4
+
+"Set the number of columns for a tab
+set softtabstop=4
 
