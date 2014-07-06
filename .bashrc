@@ -117,6 +117,9 @@ alias torrent_goto_repo='cd /media/warehouse/torrents/'
 alias mountIcy='udisksctl mount -b /dev/sdc1'
 alias umountIcy='udisksctl unmount -b /dev/sdc1'
 
+# Arret du system
+alias halt='ncmpcpp stop;mpd --kill;umountIcy;halt -p'
+
 bind '"\eOC":forward-word'
 bind '"\eOD":backward-word'
 bind '"\e[1~": beginning-of-line'
