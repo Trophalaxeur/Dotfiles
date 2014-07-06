@@ -18,12 +18,7 @@ xrandr --output DisplayPort-0 --off --output DVI-1 --mode 1920x1080 --pos 0x0 --
 # Lecture du fichier ressource
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-# urxvt -T Terminal &
-
 xbindkeys &
-
-# MPD daemon start (if no other user instance exists)
-[ ! -s ~/.mpd/pid ] && mpd
 
 # Lancement du gestionnaire de fenetre Awesome
 exec awesome
