@@ -8,8 +8,14 @@ export GIT_PS1_SHOWUPSTREAM=true
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_pS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=auto
-source /usr/share/git/completion/git-prompt.sh 
-source /usr/share/git/completion/git-completion.bash 
+
+if [ -f /usr/share/git/completion/git-prompt.sh ]; then
+  source /usr/share/git/completion/git-prompt.sh
+fi
+
+if [ -f /usr/share/git/completion/git-completion.bash ]; then
+  source /usr/share/git/completion/git-completion.bash
+fi
 
 color_prompt=yes;
 
