@@ -31,8 +31,9 @@ set backspace=indent,eol,start
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file
+  set nobackup		" keep a backup file
 endif
+
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
@@ -107,11 +108,13 @@ endif
 set number
 
 " Size of a hard tabstop
-set tabstop=4
+set tabstop=2
 
 " Size of an "indent"
-set shiftwidth=4
+set shiftwidth=2
 
 "Set the number of columns for a tab
-set softtabstop=4
+set softtabstop=2
 
+" Transformation des tabulations en espace
+set expandtab

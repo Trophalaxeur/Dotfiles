@@ -112,6 +112,8 @@ alias l='ls -CFvh'
 
 # Raccourcis persos
 
+alias diff='colordiff -urw'
+
 alias cleanfiles='rm -rf *~ .*~';
 alias emacs='emacs -nw'
 alias editbash='emacs ~/.bashrc;source ~/.bashrc;';
@@ -141,4 +143,9 @@ export BROWSER=/usr/bin/firefox
 # sources /etc/bash.bashrc).
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
+fi
+
+REP_SCRIPTS_PERSO=~/scripts_perso
+if [ -d $REP_SCRIPTS_PERSO ]; then
+  for script in `ls $REP_SCRIPTS_PERSO` ; do . $REP_SCRIPTS_PERSO/$script ; done
 fi
