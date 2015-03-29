@@ -102,7 +102,7 @@ fi
 # some more ls aliases
 alias ll='ls -CFhvla'
 alias la='ls -AFhv'
-alias l='ls -CFvh'
+alias l='ls -CFvhl'
 
 # Raccourcis persos
 
@@ -129,6 +129,8 @@ bind '"\e?":backward-kill-word'
 #Definition de l'editeur par defaut pour crontab
 export EDITOR=/usr/bin/vim
 export BROWSER=/usr/bin/firefox
+export QT_SELECT=4
+
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
