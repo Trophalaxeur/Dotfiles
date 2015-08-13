@@ -9,5 +9,3 @@ Contains all my configuration files
 	
 	git submodule init
 
-
-## Is
