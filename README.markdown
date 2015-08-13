@@ -10,4 +10,4 @@ Contains all my configuration files
 	git submodule init
 
 
-## Infos
+## Is
