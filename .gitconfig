@@ -1,0 +1,11 @@
+[push]
+	default = simple
+[status]
+	submoduleSummary = true
+[core]
+	preloadindex = true
+[alias]
+  st = status -s
+	spull = ![ \"`git diff`\" != \"\" ] && (git stash && git pull && git stash pop) || git pull
+[include]
+  path = .gitconfig_perso
