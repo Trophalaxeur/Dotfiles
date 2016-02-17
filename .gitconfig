@@ -7,5 +7,6 @@
 [alias]
   st = status -s
 	spull = ![ \"`git diff`\" != \"\" ] && (git stash && git pull && git stash pop) || git pull
+	wdiff = diff -b --word-diff
 [include]
   path = .gitconfig_perso
