@@ -1,6 +1,6 @@
 # Dotfiles
 
-Contains all my configuration files
+Contains all my configuration files.
 
 ## Installation
 
