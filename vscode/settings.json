@@ -1,0 +1,13 @@
+// Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut
+{
+    "editor.fontFamily": "'Anonymous Pro'",
+    "editor.fontSize": 13,
+    "editor.minimap.enabled": true,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 200,
+    "vsicons.projectDetection.disableDetect": true,
+    "workbench.iconTheme": "vscode-icons",
+    "window.title": "${dirty}${rootName}${separator}${activeEditorMedium}",
+    "html.format.wrapLineLength": 100,
+    "html.format.unformatted": "a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, select, small, span, strong, sub, sup, textarea, tt, var, md-icon"
+}
