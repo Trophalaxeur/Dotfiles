@@ -1,12 +1,10 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=~/.oh-my-zsh
+  export ZSH=/home/lafesse/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="maran"
-#ZSH_THEME="avit"
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,12 +50,11 @@ ZSH_THEME="maran"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git debian command-not-found npm web-search)
 
+source $ZSH/oh-my-zsh.sh
+
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -84,9 +81,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$PATH"
+
 # Source startup personal scripts if exists
 REP_SCRIPTS_PERSO=~/scripts_startup
 if [ -d $REP_SCRIPTS_PERSO ]; then
   for script in `ls $REP_SCRIPTS_PERSO/*` ; do . $script ; done
 fi
-

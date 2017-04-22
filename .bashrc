@@ -125,6 +125,9 @@ alias torrent_goto_repo='cd /media/warehouse/torrents/'
 alias mountIcy='udisksctl mount -b /dev/sdc1'
 alias umountIcy='udisksctl unmount -b /dev/sdc1'
 
+#Wine 32
+alias wine32='env WINEARCH=win32 WINEPREFIX="$HOME/.wine32" wine'
+
 # Arret du system
 alias halt='ncmpcpp stop;mpd --kill;umountIcy;halt -p'
 
