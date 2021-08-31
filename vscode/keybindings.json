@@ -22,5 +22,10 @@
     "key": "ctrl+shift+[Period]",
     "command": "-editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+shift+i",
+    "command": "-vueBeautify.format",
+    "when": "editorTextFocus && editorTextFocus && !editorReadonly && resourceLangId == 'vue'"
 }
 ]

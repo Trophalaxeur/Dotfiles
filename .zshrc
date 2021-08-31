@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/lafesse/.oh-my-zsh
+  export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -88,3 +88,5 @@ REP_SCRIPTS_PERSO=~/scripts_startup
 if [ -d $REP_SCRIPTS_PERSO ]; then
   for script in `ls $REP_SCRIPTS_PERSO/*` ; do . $script ; done
 fi
+
+source /usr/share/nvm/init-nvm.sh

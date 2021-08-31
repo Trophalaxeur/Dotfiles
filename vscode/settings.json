@@ -1,13 +1,144 @@
 // Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut
 {
-    "editor.fontFamily": "'Anonymous Pro'",
-    "editor.fontSize": 13,
-    "editor.minimap.enabled": true,
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 200,
-    "vsicons.projectDetection.disableDetect": true,
-    "workbench.iconTheme": "vscode-icons",
-    "window.title": "${dirty}${rootName}${separator}${activeEditorMedium}",
-    "html.format.wrapLineLength": 100,
-    "html.format.unformatted": "a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, select, small, span, strong, sub, sup, textarea, tt, var, md-icon"
+  "editor.fontFamily": "'Anonymous Pro'",
+  "editor.fontSize": 12,
+  "editor.wordWrap": "on",
+  "eslint.trace.server": "messages",
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    {
+      "language": "vue",
+    },
+    {
+      "language": "html",
+    },
+    {
+      "language": "javascript",
+    },
+    {
+      "language": "typescript",
+    }
+  ],
+  // "editor.wordWrapColumn": 200,
+  // "vsicons.projectDetection.disableDetect": true,
+  // "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.extension.sortImports.sortMethod": "path",
+  "typescript.extension.sortImports.pathSortOrder": [
+    "package",
+    "relativeUpLevel",
+    "relativeDownLevel"
+  ],
+  "typescript.extension.sortImports.maxNamedImportsInSingleLine": 10,
+  "window.title": "${dirty}${rootName}${separator}${activeEditorMedium}",
+  "beautify.language": {
+    "js": {
+      "type": [
+        "javascript",
+        "json"
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautify"
+      ]
+    },
+    "css": [
+      "css",
+      "less",
+      "scss"
+    ],
+    "html": [
+      "xml",
+      "htm",
+      "html"
+    ]
+  },
+  "python.linting.maxNumberOfProblems": 200,
+  "python.formatting.autopep8Args": [
+    "--max-line-length",
+    "200"
+  ],
+  "window.titleBarStyle": "custom",
+  "editor.renderWhitespace": "all",
+  "breadcrumbs.enabled": true,
+  "workbench.activityBar.visible": true,
+  "files.autoSave": "afterDelay",
+  "[csv]": {},
+  "workbench.iconTheme": "vscode-icons",
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsicons.dontShowNewVersionMessage": true,
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "python.linting.pylintArgs": [
+    "--disable=no-member"
+  ],
+  "editor.renderControlCharacters": true,
+  "debug.console.wordWrap": false,
+  "php.validate.executablePath": "/usr/bin/php72",
+  "symfony-vscode.phpExecutablePath": "/usr/bin/php72",
+  "emmet.includeLanguages": {
+    "twig": "html",
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "namespaceResolver.highlightOnSave": true,
+  "namespaceResolver.highlightOnOpen": true,
+  "markdown-preview-enhanced.enableCriticMarkupSyntax": true,
+  "twig-language-2.bracePadding": true,
+  "twig-language-2.cssInsertLines": true,
+  "twig-language-2.quoteConvert": "double",
+  "twig-language-2.spaceClose": true,
+  "[twig]": {
+    "editor.defaultFormatter": "mblode.twig-language-2"
+  },
+  "twig-language-2.indentStyle": "space",
+  "twig-language-2.tagMerge": true,
+  "[css]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+  },
+  "phpfmt.indent_with_space": 4,
+  "phpfmt.php_bin": "/usr/bin/php72",
+  "phpfmt.exclude": [
+    "AllmanStyleBraces"
+  ],
+  "phpfmt.psr2": false,
+  "[xml]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "html.format.wrapLineLength": 0,
+  "[scss]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "eslint.alwaysShowStatus": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false
+  },
+  "search.showLineNumbers": true,
+  // "html.format.wrapLineLength": 0,
+  // "html.format.unformatted": "wbr",
+  // "eslint.packageManager": "yarn",
+  // "tslint.packageManager": "yarn",
+  // "npm.packageManager": "yarn",
+  // "vsicons.dontShowNewVersionMessage": true
 }
