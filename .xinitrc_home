@@ -1,0 +1,18 @@
+# Set keyboard layout FR
+setxkbmap -layout fr
+
+xscreensaver -no-splash&
+
+# Read resources file
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
+#NVIDIA_Optimus tuto
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
+sh ~/.screenlayout/3_screens_home.sh
+
+exec awesome
+
+
+
