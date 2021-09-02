@@ -67,8 +67,13 @@ URxvt.background: Black
 !
 ! Xft: DejaVu fonts
 !  Fedora/debian packages: dejavu-sans-mono-fonts/ttf-dejavu 
-URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=false:hinting=true
-URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=false:hinting=true
+!URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=false:hinting=true
+!URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=false:hinting=true
+!
+! Xft: AnonymousPro
+!  Archlinux packages: ttf-anonymous-pro
+URxvt*font: xft:AnonymousPro:pixelsize=14:antialias=true:hinting=true
+URxvt*boldFont: xft:AnonymousPro-Bold:pixelsize=14:antialias=true:hinting=true
 !
 ! Xft: Liberation fonts
 !  Fedora/debian packages: liberation-mono-fonts/ttf-liberation

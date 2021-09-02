@@ -4,9 +4,12 @@
 	submoduleSummary = true
 [core]
 	preloadindex = true
+	editor = vim
 [alias]
-  st = status -s
+	st = status -s
 	spull = ![ \"`git diff`\" != \"\" ] && (git stash && git pull && git stash pop) || git pull
 	wdiff = diff -b --word-diff
+[pull]
+	ff = only
 [include]
   path = .gitconfig_perso

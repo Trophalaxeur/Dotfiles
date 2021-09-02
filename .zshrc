@@ -89,4 +89,4 @@ if [ -d $REP_SCRIPTS_PERSO ]; then
   for script in `ls $REP_SCRIPTS_PERSO/*` ; do . $script ; done
 fi
 
-source /usr/share/nvm/init-nvm.sh
+#source /usr/share/nvm/init-nvm.sh
