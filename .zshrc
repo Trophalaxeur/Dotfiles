@@ -85,8 +85,10 @@ export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$PATH"
 
 # Source startup personal scripts if exists
 REP_SCRIPTS_PERSO=~/scripts_startup
+HOSTNAME_SCRIPT=`hostname`.sh
+COMMON_SCRIPT=common.sh
 if [ -d $REP_SCRIPTS_PERSO ]; then
-  for script in `ls $REP_SCRIPTS_PERSO/*` ; do . $script ; done
+  for script in `ls $REP_SCRIPTS_PERSO/*$COMMON_SCRIPT $REP_SCRIPTS_PERSO/*$HOSTNAME_SCRIPT` ; do . $script ; done
 fi
 
 #source /usr/share/nvm/init-nvm.sh

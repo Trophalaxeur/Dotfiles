@@ -46,7 +46,7 @@ URxvt*transparent: false
 !URxvt*shading: 40
 
 ! scrollback buffer lines - 65535 is max on most machines (64 is default)
-URxvt*saveLines: 1000
+URxvt*saveLines: 20000
 
 ! font color (default is black)
 URxvt.foreground: White
@@ -72,8 +72,11 @@ URxvt.background: Black
 !
 ! Xft: AnonymousPro
 !  Archlinux packages: ttf-anonymous-pro
-URxvt*font: xft:AnonymousPro:pixelsize=14:antialias=true:hinting=true
-URxvt*boldFont: xft:AnonymousPro-Bold:pixelsize=14:antialias=true:hinting=true
+!URxvt*font: xft:Anonymous Pro:size=9:antialias=true:hinting=true
+!URxvt*boldFont: xft:Anonymous Pro:bold:size=9:antialias=true:hinting=true
+URxvt*font: xft:Anonymous Pro:pixelsize=13:antialias=true:hinting=trueletterSpace:6
+URxvt*boldFont: xft:Anonymous Pro:bold:size=9
+!
 !
 ! Xft: Liberation fonts
 !  Fedora/debian packages: liberation-mono-fonts/ttf-liberation
@@ -104,8 +107,11 @@ URxvt.scrollBar: true
 URxvt.scrollBar_right: true
 
 ! scrollbar style - rxvt (default), plain, next, or xterm
-URxvt*scrollstyle: rxvt
+URxvt*scrollstyle: plain
 
 ! Désactivation des extensions perl pour gagner en performance
 URxvt.perl-ext:
 URxvt.perl-ext-common:
+
+
+xscreensaver.logFile:/var/log/xscreensaver.log

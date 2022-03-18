@@ -1,11 +1,7 @@
 # Set keyboard layout FR
 setxkbmap -layout fr
 
-# export SSH_ASKPASS=ssh-askpass
-eval $(ssh-agent -s)
-ssh-add
-
-#xscreensaver -no-splash&
+xscreensaver -no-splash&
 
 # Read resources file
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
@@ -13,6 +9,8 @@ ssh-add
 #NVIDIA_Optimus tuto
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
+
+sh ~/.screenlayout/kaliz_3_screens.sh
 
 exec awesome
 
