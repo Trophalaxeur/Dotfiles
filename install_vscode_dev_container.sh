@@ -9,4 +9,3 @@ cp ./.zshrc ~
 
 # Not cool but i do not know how to do it better
 cat ~/.zshrc_snippets >> ~/.zshrc
-rm ~/.zshrc_snippets
