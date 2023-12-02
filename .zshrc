@@ -88,7 +88,7 @@ REP_SCRIPTS_PERSO=~/scripts_startup
 HOSTNAME_SCRIPT=`hostname`.sh
 COMMON_SCRIPT=common.sh
 if [ -d $REP_SCRIPTS_PERSO ]; then
-  for script in `find $REP_SCRIPTS_PERSO -name "*$COMMON_SCRIPT" -o -name "*$HOSTNAME_SCRIPT" 2>/dev/null` ; do . $script ; done
+  for script in `find $REP_SCRIPTS_PERSO -name "*$COMMON_SCRIPT" -o -name "*$HOSTNAME_SCRIPT" 2>/dev/null` ; do source $script ; done
 fi
 
 #source /usr/share/nvm/init-nvm.sh
