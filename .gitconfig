@@ -1,5 +1,6 @@
 [push]
 	default = simple
+	autoSetupRemote = true
 [status]
 	submoduleSummary = true
 [core]
@@ -13,3 +14,4 @@
 	ff = only
 [include]
   path = .gitconfig_perso
+
