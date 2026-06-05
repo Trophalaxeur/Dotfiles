@@ -4,11 +4,40 @@ Contains all my configuration files.
 
 ## Installation
 
-Make symbolic link to all dotfiles.
-To install .vim plugins, goto Dotfiles directories and exec :
-	
-	git submodule init
-	git submodule update
+Clone the repo and create symlinks:
+
+```bash
+git clone git@github.com:Trophalaxeur/Dotfiles.git ~/Project/Dotfiles
+cd ~/Project/Dotfiles
+```
+
+### Root dotfiles
+
+```bash
+ln -s ~/Project/Dotfiles/.bashrc       ~/.bashrc
+ln -s ~/Project/Dotfiles/.gitconfig    ~/.gitconfig
+ln -s ~/Project/Dotfiles/.vimrc        ~/.vimrc
+ln -s ~/Project/Dotfiles/.vim          ~/.vim
+ln -s ~/Project/Dotfiles/.xinitrc      ~/.xinitrc
+ln -s ~/Project/Dotfiles/.Xresources   ~/.Xresources
+ln -s ~/Project/Dotfiles/.xscreensaver ~/.xscreensaver
+ln -s ~/Project/Dotfiles/.zshrc        ~/.zshrc
+```
+
+### XDG config (~/.config)
+
+```bash
+mkdir -p ~/.config/kitty ~/.config/awesome
+ln -s ~/Project/Dotfiles/.config/kitty/kitty.conf     ~/.config/kitty/kitty.conf
+ln -s ~/Project/Dotfiles/.config/awesome/rc.lua        ~/.config/awesome/rc.lua
+```
+
+### Vim plugins
+
+```bash
+git submodule init
+git submodule update
+```
 
 ## Customization
 
