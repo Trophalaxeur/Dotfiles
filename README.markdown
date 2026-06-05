@@ -24,6 +24,12 @@ ln -s ~/Project/Dotfiles/.xscreensaver ~/.xscreensaver
 ln -s ~/Project/Dotfiles/.zshrc        ~/.zshrc
 ```
 
+### Scripts
+
+```bash
+ln -s ~/Project/Dotfiles/scripts_startup ~/scripts_startup
+```
+
 ### XDG config (~/.config)
 
 ```bash
