@@ -11,3 +11,7 @@ alias xlock='LANF=fr_FR xlock'
 # Thallium Japet
 alias dcprod='docker-compose -f docker/docker-compose-app.yml --env-file docker/docker.env -p japet_prod'
 alias dccommon='docker-compose -f docker/docker-compose-common.yml --env-file docker/docker.env' 
+
+
+# VERCEL_BISMUTH_HOOK is a secret, defined in ~/.zshrc.local
+alias blog-publish='curl -s -X POST "$VERCEL_BISMUTH_HOOK" | jq .job.id'
