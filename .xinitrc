@@ -15,6 +15,13 @@ ssh-add
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 
+#Inject graphical environment into systemd user services (for immich upload button)
+export XDG_CURRENT_DESKTOP=awesome
+export DISPLAY=:0
+
+dbus-update-activation-environment --systemd DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP
+systemctl --user import-environment DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP
+
 exec awesome
 
 

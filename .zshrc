@@ -88,8 +88,16 @@ REP_SCRIPTS_PERSO=~/scripts_startup
 HOSTNAME_SCRIPT=`hostname`.sh
 COMMON_SCRIPT=common.sh
 if [ -d $REP_SCRIPTS_PERSO ]; then
-  # for script in `ls $REP_SCRIPTS_PERSO/*$COMMON_SCRIPT` ; do . $script ; done
-  for script in `find $REP_SCRIPTS_PERSO -name "*$COMMON_SCRIPT" -o -name "*$HOSTNAME_SCRIPT" 2>/dev/null` ; do source $script ; done
+  # zsh glob instead of find: find does not descend into the symlinked directory
+  for script in $REP_SCRIPTS_PERSO/*$COMMON_SCRIPT(N) $REP_SCRIPTS_PERSO/*$HOSTNAME_SCRIPT(N) ; do source $script ; done
 fi
 
+# Machine-local settings and secrets, never versioned
+[ -f ~/.zshrc.local ] && . ~/.zshrc.local
+
 #source /usr/share/nvm/init-nvm.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+nvm use default --silent
