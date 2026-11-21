@@ -81,9 +81,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Ship a merged bromine-backend change to the LXC (git pull + npm ci + restart).
-alias bromine-deploy='ssh root@bromine.lan bromine-deploy'
-
 export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$PATH"
 
 # Source startup personal scripts if exists
